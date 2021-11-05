@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636133509802" clover="3.2.0">
-  <project timestamp="1636133509802" name="All files">
-    <metrics statements="66" coveredstatements="61" conditionals="16" coveredconditionals="12" methods="20" coveredmethods="18" elements="102" coveredelements="91" complexity="0" loc="66" ncloc="66" packages="5" files="7" classes="7"/>
+<coverage generated="1636134906475" clover="3.2.0">
+  <project timestamp="1636134906475" name="All files">
+    <metrics statements="82" coveredstatements="74" conditionals="22" coveredconditionals="16" methods="24" coveredmethods="20" elements="128" coveredelements="110" complexity="0" loc="82" ncloc="82" packages="5" files="9" classes="9"/>
     <package name="customDatabase">
       <metrics statements="19" coveredstatements="18" conditionals="6" coveredconditionals="4" methods="10" coveredmethods="10"/>
       <file name="Table.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/Table.js">
@@ -28,7 +28,7 @@
       </file>
     </package>
     <package name="customDatabase.commands">
-      <metrics statements="15" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="3"/>
+      <metrics statements="21" coveredstatements="14" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="4"/>
       <file name="InsertCommand.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/commands/InsertCommand.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
@@ -38,7 +38,7 @@
         <line num="10" count="1" type="stmt"/>
       </file>
       <file name="SelectCommand.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/commands/SelectCommand.js">
-        <metrics statements="10" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
@@ -47,8 +47,17 @@
         <line num="8" count="2" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="15" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="WhereCommand.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/commands/WhereCommand.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
       </file>
     </package>
     <package name="customDatabase.errors">
@@ -61,7 +70,7 @@
       </file>
     </package>
     <package name="customDatabase.parsers">
-      <metrics statements="25" coveredstatements="25" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <metrics statements="35" coveredstatements="35" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
       <file name="insert.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/parsers/insert.js">
         <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -93,15 +102,28 @@
         <line num="22" count="2" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
       </file>
+      <file name="where.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/parsers/where.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
     </package>
     <package name="customDatabase.utils">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="safeParseJSON.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/utils/safeParseJSON.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
     </package>
   </project>
