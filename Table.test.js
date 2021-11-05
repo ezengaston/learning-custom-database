@@ -74,3 +74,51 @@ describe("#insertRecord", () => {
     });
   });
 });
+
+describe("#overwriteTable", () => {
+  describe("With nonexisting table name", () => {
+    beforeEach(() => mock({ data: {} }));
+    afterEach(mock.restore);
+
+    test("It creates the table and adds the data", async () => {
+      const table = new Table("table");
+      const dataToInsert = [
+        { a: 1, b: 2 },
+        { a: 3, b: 4 },
+      ];
+      await table.overwriteTable(dataToInsert);
+
+      expect(
+        JSON.parse(fs.readFileSync("data/table.json"))
+      ).toIncludeSameMembers(dataToInsert);
+    });
+  });
+
+  describe("With an existing table name", () => {
+    const data = [
+      { a: 1, b: 2 },
+      { a: 3, b: 4 },
+    ];
+    beforeEach(() =>
+      mock({
+        data: {
+          "table.json": JSON.stringify(data),
+        },
+      })
+    );
+    afterEach(mock.restore);
+
+    test("It overwrite the data", async () => {
+      const table = new Table("table");
+      const dataToInsert = [
+        { a: 5, b: 6 },
+        { a: 7, b: 8 },
+      ];
+      await table.overwriteTable(dataToInsert);
+
+      expect(
+        JSON.parse(fs.readFileSync("data/table.json"))
+      ).toIncludeSameMembers(dataToInsert);
+    });
+  });
+});
