@@ -8,8 +8,9 @@ module.exports = class SelectCommand {
     this.allColumns = allColumns;
   }
 
-  async perform() {
-    const data = await this.table.readData();
+  async perform(whereCommand) {
+    let data = await this.table.readData();
+    if (whereCommand) data = whereCommand.perform(data);
     if (this.allColumns) return data;
 
     return data.map((object) => {

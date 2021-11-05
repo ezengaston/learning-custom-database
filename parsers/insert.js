@@ -1,4 +1,5 @@
 const InsertCommand = require("../commands/InsertCommand");
+const safeParseJSON = require("../utils/safeParseJSON");
 
 const INSERT_COMMAND = "INSERT";
 const BEFORE_TABLE_COMMAND = "INTO";
@@ -16,14 +17,6 @@ function parseInsertCommand(commandString) {
   const tableName = regexMatch.groups.tableName;
 
   return new InsertCommand({ tableName, record });
-}
-
-function safeParseJSON(string) {
-  try {
-    return JSON.parse(string);
-  } catch (e) {
-    return;
-  }
 }
 
 module.exports = parseInsertCommand;
