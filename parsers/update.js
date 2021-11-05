@@ -1,4 +1,4 @@
-const InsertCommand = require("../commands/UpdateCommand");
+const UpdateCommand = require("../commands/UpdateCommand");
 const safeParseJSON = require("../utils/safeParseJSON");
 
 const UPDATE_COMMAND = "UPDATE";
