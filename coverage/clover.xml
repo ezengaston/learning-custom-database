@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636138247092" clover="3.2.0">
-  <project timestamp="1636138247092" name="All files">
-    <metrics statements="133" coveredstatements="125" conditionals="36" coveredconditionals="31" methods="36" coveredmethods="33" elements="205" coveredelements="189" complexity="0" loc="133" ncloc="133" packages="5" files="13" classes="13"/>
+<coverage generated="1636143161272" clover="3.2.0">
+  <project timestamp="1636143161272" name="All files">
+    <metrics statements="133" coveredstatements="132" conditionals="36" coveredconditionals="33" methods="36" coveredmethods="36" elements="205" coveredelements="201" complexity="0" loc="133" ncloc="133" packages="5" files="13" classes="13"/>
     <package name="customDatabase">
       <metrics statements="23" coveredstatements="22" conditionals="8" coveredconditionals="5" methods="13" coveredmethods="13"/>
       <file name="Table.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/Table.js">
         <metrics statements="23" coveredstatements="22" conditionals="8" coveredconditionals="5" methods="13" coveredmethods="13"/>
-        <line num="1" count="8" type="stmt"/>
-        <line num="2" count="8" type="stmt"/>
-        <line num="3" count="8" type="stmt"/>
-        <line num="5" count="8" type="stmt"/>
-        <line num="7" count="17" type="stmt"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="7" count="19" type="stmt"/>
         <line num="11" count="8" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
@@ -32,19 +32,19 @@
       </file>
     </package>
     <package name="customDatabase.commands">
-      <metrics statements="47" coveredstatements="40" conditionals="10" coveredconditionals="8" methods="15" coveredmethods="12"/>
+      <metrics statements="47" coveredstatements="47" conditionals="10" coveredconditionals="10" methods="15" coveredmethods="15"/>
       <file name="DeleteCommand.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/commands/DeleteCommand.js">
-        <metrics statements="10" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
       </file>
       <file name="InsertCommand.js" path="/Users/ezengaston/Documents/Projects/Java Script Learning/Set Up/javascriptProjects/customDatabase/commands/InsertCommand.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -102,7 +102,7 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
       </file>
     </package>
     <package name="customDatabase.parsers">

@@ -11,7 +11,7 @@ module.exports = class DeleteCommand {
 
     if (whereCommand) dataToDelete = whereCommand.perform(dataToDelete);
 
-    const dataToKeep = originalData.map((record) => {
+    const dataToKeep = originalData.filter((record) => {
       return !dataToDelete.includes(record);
     });
     await this.table.overwriteTable(dataToKeep);
