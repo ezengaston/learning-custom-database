@@ -2,6 +2,7 @@ const parseInsertCommand = require("./parsers/insert");
 const parseSelectCommand = require("./parsers/select");
 const parseWhereCommand = require("./parsers/where");
 const parseUpdateCommand = require("./parsers/update");
+const parseDeleteCommand = require("./parsers/delete,");
 const InvalidCommandError = require("./errors/InvalidCommandError");
 
 const parsers = [
@@ -9,6 +10,7 @@ const parsers = [
   parseSelectCommand,
   parseWhereCommand,
   parseUpdateCommand,
+  parseDeleteCommand,
 ];
 
 module.exports = async function parseCommand(commandString) {
